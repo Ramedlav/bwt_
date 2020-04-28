@@ -15,7 +15,7 @@ class Singleton{
 
     public function __wakeup()
     {
-        throw new \Exception("нельзя десереализировать класс Одинчку");
+        throw new \Exception("Cannot unserialize singleton");
     }
 
     public static function getInstanse(){
