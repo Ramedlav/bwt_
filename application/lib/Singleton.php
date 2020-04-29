@@ -19,7 +19,7 @@ class Singleton{
     }
 
     public static function getInstanse(){
-        $subclass = static::class;//static::class возвращает имя текущего класса (не знал что так можно:))
+        $subclass = static::class;//static::class возвращает имя текущего класса)
         if(!isset(self::$instances[$subclass])){//если данного экзепляра нет в нашем масиве
             self::$instances[$subclass] = new static;// мы его туда закинем
 //            debug(self::$instances[$subclass]);
